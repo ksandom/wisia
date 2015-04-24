@@ -1,0 +1,16 @@
+# Add an entry for how many hours you slept. --slept=hours[,quality[,sleepWalkedTimes[,extraWakeTimes[,notes]]]] . quality should be something like good, restless, light etc. sleepWalkedTimes is the number of times you sleep walked. extraWakeTimes is the number of extra times you woke up (not including when you got up.)  ~ wisia,slept
+
+parameters {"hours":"0","quality":"good","sleepWalkedTimes":"0","extraWakeTimes":"0","notes":""}
+
+# TODO add template
+# TODO add dataTypes
+
+loadWisia
+
+now Me,now
+debug 0,~!Me,now!~
+setNested Wisia,sleep,~!Me,now!~,hours,~!Local,hours!~
+setNested Wisia,sleep,~!Me,now!~,quality,~!Local,notes!~
+setNested Wisia,sleep,~!Me,now!~,sleepWalkedTimes,~!Local,notes!~
+setNested Wisia,sleep,~!Me,now!~,extraWakeTimes,~!Local,notes!~
+setNested Wisia,sleep,~!Me,now!~,notes,~!Local,notes!~
