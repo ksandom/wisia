@@ -1,0 +1,4 @@
+# Install the feature types for wisia sleep ~ wisia,sleep,semantics,hidden
+#onDefine registerForEvent Install,featureTypes,installFeatureTypesForWisiaSleep
+
+createFeatureType wisiaSleep,,wisiaSleep,Wisia sleep
