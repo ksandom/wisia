@@ -1,0 +1,7 @@
+# Add a wisia data item. --addWisiaItem=type,name,value . This is mostly aimed for internal/dev use. ~ wisia,dev,data
+parameters type,name,value
+
+loadWisia
+
+now Local,now
+setNested ["Wisia","items","",{"when":"~!Local,now!~","type":"~!Local,type!~","name":"~!Local,name!~","value":"~!Local,value!~"}]

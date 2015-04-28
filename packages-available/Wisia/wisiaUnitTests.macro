@@ -1,0 +1,23 @@
+# Unit tests for wisia ~ wisia,Wisia,unitTest,hidden
+
+collectionLoadForUnitTest Wisia
+
+defineTest Wisia addWisiaItem,
+	# Add it
+	addWisiaItem sleep,hours,8
+	
+	# Test that stuff was set as expected
+	retrieveResults Wisia,items
+	last
+	loop
+		expect sleep hours 8,~!Result,type!~ ~!Result,name!~ ~!Result,value!~
+
+defineTest Wisia wisiaList,
+	# Add it
+	addWisiaItem food,banana,2
+	
+	# Test that stuff was set as expected
+	wisiaList
+	last
+	loop
+		expect food banana 2,~!Result,type!~ ~!Result,name!~ ~!Result,value!~

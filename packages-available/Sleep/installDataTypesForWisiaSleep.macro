@@ -1,4 +1,0 @@
-# Install the data types for wisia sleep ~ wisia,sleep,semantics,hidden
-#onDefine registerForEvent Install,featureTypes,installDataTypesForWisiaSleep
-
-createDataType wisiaSleep,wisiaSleep,,,,Wisia sleep

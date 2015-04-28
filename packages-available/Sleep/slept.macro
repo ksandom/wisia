@@ -2,17 +2,13 @@
 
 parameters {"hours":"0","quality":"7","sleepWalkedTimes":"0","sleepTalkedTimes":"0","extraWakeTimes":"0","notes":""}
 
-# TODO add template
-# TODO add dataTypes
-
 loadWisia
 
-now Me,now
-debug 0,~!Me,now!~
-setNested Wisia,sleep,~!Me,now!~,when,~!Me,now!~
-setNested Wisia,sleep,~!Me,now!~,hours,~!Local,hours!~
-setNested Wisia,sleep,~!Me,now!~,quality,~!Local,quality!~
-setNested Wisia,sleep,~!Me,now!~,sleepWalkedTimes,~!Local,sleepWalkedTimes!~
-setNested Wisia,sleep,~!Me,now!~,sleepTalkedTimes,~!Local,sleepTalkedTimes!~
-setNested Wisia,sleep,~!Me,now!~,extraWakeTimes,~!Local,extraWakeTimes!~
-setNested Wisia,sleep,~!Me,now!~,notes,~!Local,notes!~
+addWisiaItem sleep,hours,~!Local,hours!~
+addWisiaItem sleep,quality,~!Local,quality!~
+addWisiaItem sleep,sleepWalkedTimes,~!Local,sleepWalkedTimes!~
+addWisiaItem sleep,sleepTalkedTimes,~!Local,sleepTalkedTimes!~
+
+if ~!Local,notes!~,!=,,
+	addWisiaItem sleep,notes,~!Local,notes!~
+

@@ -1,5 +1,0 @@
-# List out how much sleep you got. ~ wisia,sleep
-#onLoaded setFeatureType listSleep,wisiaSleep
-
-loadWisia
-retrieveResults Wisia,sleep

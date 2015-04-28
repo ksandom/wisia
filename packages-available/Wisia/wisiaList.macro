@@ -1,0 +1,4 @@
+# List visia items ~ wisia,list
+
+loadWisia
+retrieveResults Wisia,items
