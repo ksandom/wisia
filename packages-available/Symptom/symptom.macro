@@ -1,0 +1,4 @@
+# Track an aspect of how you feel. --symptom=what,rating . what will be something like tired, itchyHands, nausea etc. rating is a rating you give it on a scale that is sensible to you. When analysing this data, wisia will determine a scale for each item based on the maximum value you enter. ~ wisia,symptom,user
+parameters what,rating
+
+addWisiaItem symptom,~!Local,what!~,~!Local,rating!~
