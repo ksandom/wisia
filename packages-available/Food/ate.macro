@@ -1,0 +1,8 @@
+# Ate something. --ate=what,howMany . what will typically be things like banana, 'tuna sandwhich', sushi etc. howMany will typically be a serving. Eg 1 apple, or a handfull of berries. ~ wisia,ate,food,user
+
+parameters {"what":"","howMany":"1"}
+
+if ~!Local,what!~,!=,,
+	addWisiaItem food,~!Local,what!~,~!Local,howMany!~
+else
+	debug 1,I don't know what you ate, so I can't add it.
