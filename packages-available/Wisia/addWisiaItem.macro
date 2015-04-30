@@ -1,7 +1,10 @@
-# Add a wisia data item. --addWisiaItem=type,name,value . This is mostly aimed for internal/dev use. ~ wisia,dev,data
-parameters type,name,value
+# Add a wisia data item. --addWisiaItem=type,name,value,scale . This is mostly aimed for internal/dev use. ~ wisia,dev,data
+parameters type,name,value,scale
 
 loadWisia
 
 now Local,now
 setNested ["Wisia","items","",{"when":"~!Local,now!~","type":"~!Local,type!~","name":"~!Local,name!~","value":"~!Local,value!~"}]
+
+if ~!Local,value!~,>,~!Wisia,scale,~!Local,type!~,~!Local,name!~!~,
+	setNested Wisia,scale,~!Local,type!~,~!Local,name!~,~!Local,value!~
