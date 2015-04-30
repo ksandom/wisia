@@ -1,0 +1,6 @@
+# Add an item of exercise. --exercise=what,rating ~ wisia,user,exercise
+parameters what,rating
+
+addWisiaItem exercise,~!Local,what!~,~!Local,rating!~
+
+
