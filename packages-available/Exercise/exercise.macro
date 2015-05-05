@@ -1,6 +1,4 @@
-# Add an item of exercise. --exercise=what,rating ~ wisia,user,exercise
+# Add an item of exercise. --exercise=what,rating . For --exercise; rating probably would make the most sense as minutes or hours, but could be percieved intensity. As long as you consistently use the same numeric unit (eg hours, minutes, reps, intensity etc) it should be easy to analyse. ~ wisia,user,exercise
 parameters what,rating
 
 addWisiaItem exercise,~!Local,what!~,~!Local,rating!~
-
-
