@@ -1,0 +1,4 @@
+# Install the feature types for Wisia. ~ wisia,install,semantics,hidden
+#onDefine registerForEvent Install,featureTypes,installWisiaFeatureTypes
+
+createFeatureType generateWisiaItem,,wisiaItem,'Creates a set of wisia items.'

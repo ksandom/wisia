@@ -1,4 +1,7 @@
-# List visia items ~ wisia,list
+# List visia items ~ wisia,list,user
+#onLoaded setFeatureType wisiaList,generateWisiaItem
+#onLoaded registerForEvent Template,beforeProcessing-wisiaItem,convertNowToTimeStamp
+#TODO figure out why the timestamp isn't working.
 
 loadWisia
 retrieveResults Wisia,items

@@ -1,0 +1,4 @@
+# Install the Wisia data types. ~ wisia,install,semantics,hidden
+#onDefine registerForEvent Install,dataTypes,installWisiaDataTypes
+
+createDataType wisiaItem,wisiaItem,,,,A wisia item like exercise or sleep etc.
