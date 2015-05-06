@@ -1,0 +1,19 @@
+# Convert the value of each item to a bar in hashes. --wisiaValueToHashes=width ~ wisia,hidden
+#onLoaded registerForEvent Template,beforeProcessing-wisiaItem,wisiaValueToHashes,20
+parameters width
+
+loop
+	# Get the maximum value so we can give values a consistent scale.
+	unset Local,max
+	set Local,max,~!Wisia,scale,~!Result,type!~,~!Result,name!~!~
+	
+	# Based on the above, scale the value to the width of the bar graph.
+	basicMaths Local,scaledValue,~!Result,value!~,*,~!Local,width!~
+	basicMaths Local,scaledValue,~!Local,scaledValue!~,/,~!Local,max!~
+	round Local,scaledValue,~!Local,scaledValue!~,0
+	basicMaths Local,remaining,~!Local,width!~,-,~!Local,scaledValue!~
+	
+	# Generate the bar
+	generateChars Result,hashes,~!Local,scaledValue!~,#
+	generateChars Result,whiteSpace,~!Local,remaining!~,.
+	set Result,bar,~!Result,hashes!~~!Result,whiteSpace!~
