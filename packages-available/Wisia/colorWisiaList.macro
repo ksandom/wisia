@@ -1,0 +1,6 @@
+# Add color to wisiaList ~ wisia,list,hidden
+#onLoaded registerForEvent Template,beforeProcessing-wisiaItem,colorWisiaList
+
+loop
+	colorText Result,typeColor,~!Result,type!~
+	colorText Result,nameColor,~!Result,name!~
