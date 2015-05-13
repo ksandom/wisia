@@ -1,4 +1,4 @@
-# Add an entry for how many hours you slept. --slept=hours[,quality[,sleepWalkedTimes[,sleepWalkedTimes[,extraWakeTimes[,notes]]]]] . quality is a score from 0-10. 0 being terrible, 10 being the best night's sleep ever. sleepWalkedTimes is the number of times you sleep walked. extraWakeTimes is the number of extra times you woke up (not including when you got up.)  ~ wisia,slept,user
+# Add an entry for how many hours you slept. --slept=hours[,quality[,sleepWalkedTimes[,sleepTalkedTimes[,extraWakeTimes[,notes]]]]] . quality is a score from 0-10. 0 being terrible, 10 being the best night's sleep ever. sleepWalkedTimes is the number of times you sleep walked. extraWakeTimes is the number of extra times you woke up (not including when you got up.)  ~ wisia,slept,user
 
 parameters {"hours":"0","quality":"7","sleepWalkedTimes":"0","sleepTalkedTimes":"0","extraWakeTimes":"0","notes":""}
 
